@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Geographical View</title>
+
+    <!-- Leaflet CSS & JS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <!-- d3 JavaScript -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+     <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='map_view.css') }}">
+
+  </head>
+  <body>
+    <div>
+      <header>
+      <h1> Housing Affordability Project </h1>
+      <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/index_1">Home Price to Salary</a>
+        <a href="/index_2">Home Price to Affordability</a>
+        <a href="/index_3">Affordability to Unemployment</a>
+        <a class="active" href="/map_view">Geographical View</a>
+      </div>
+
+
+      </header>
+    </div>
+    <!-- The div where we will inject our map -->
+    <div id="map"></div>
+
+    <div>
+      <h3> Team members: Tommy Steed, Patrick Dancel, Christine Assaad, Jungmyun Kim </h3>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='logic_test.js') }}"></script>
+
+  </body>
+</html>
